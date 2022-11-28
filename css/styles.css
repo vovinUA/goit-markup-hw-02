@@ -7,8 +7,8 @@
 /* Global styles */
 body {
     font-family: 'Roboto', sans-serif;
-
     background-color:#F5F5F5;
+    color: var(--primary-text-color);
 }
 /* Header styles */
 .logo {
@@ -59,7 +59,7 @@ body {
     font-size: 44px;
     line-height: 1.4;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 900;
 }
 .hero-button {
     background-color: var(--accent-color);
@@ -72,6 +72,7 @@ body {
     font-weight:bold;
     height:50px;
     width:216px;
+    cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -79,7 +80,6 @@ body {
     border-radius: 0.3em;
     color: var(--accent-color);
     border-color: var(--accent-color);
-    font-weight:900;
 }
 .section-title {
     color: var(--title-text-color);
@@ -102,6 +102,35 @@ body {
 
 /* Portfolio styles */
 
+.portfolio-title-main {
+    color: var(--title-text-color);
+}
+
+.portfolio-button-active {
+    background-color: var(--accent-color);
+    font-size:16px;
+    line-height: 1.8;
+    border-style:solid;
+    border-color: rgba(255, 255, 255, 1);
+    border-radius: 0.3em;
+    color:#fff;
+    cursor: pointer;
+}
+.portfolio-button {
+    background-color: #F5F4FA;
+    font-size:16px;
+    line-height: 1.8;
+    border-style: none;
+    border-color: rgba(255, 255, 255, 1);
+    border-radius: 0.3em;
+    color: var(--title-text-color);
+    cursor: pointer;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--accent-color);
+    color: #fff;
+}
 .portfolio-title {
     font-size: 18px;
     line-height: 2;
