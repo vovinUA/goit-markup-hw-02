@@ -3,6 +3,7 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --header-background: #fff;
+    --accent-background: #2F303A;
 }
 /* Global styles */
 body {
@@ -10,24 +11,35 @@ body {
     background-color:#F5F5F5;
     color: var(--primary-text-color);
 }
+ul {
+    list-style: none;
+}
 /* Header styles */
+.header-main{
+    background-color: var(--header-background);
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 26px;
     color:#000;
-    text-decoration:none;
+    text-decoration: none;
 }
 .logo-accent {
     color: var(--accent-color);
 }
+.logo-accent-footer {
+    color: #fff;
+}
 .navigation{
-    font-size:14px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.link {
+    text-decoration: none;
 }
 .nav-item{
-    color: var(--primary-text-color);
-    text-decoration:none;
-
+    color: var(--title-text-color);
 }
 .nav-item:hover,
 .nav-item:focus {
@@ -35,24 +47,26 @@ body {
 }
 .nav-item-current {
     color: var(--accent-color);
-    text-decoration:none;
 }
 .nav-item-current:hover,
 .nav-item-current:focus {
     color: var(--primary-text-color);
-    text-decoration:none;
 }
 .nav-item-tel {
     color: var(--primary-text-color);
-    text-decoration:none;
+    font-style:normal;
 }
 .nav-item-tel:hover,
 .nav-item-tel:focus {
     color: var(--accent-color);
-    text-decoration:none;
+    ащте-іендуЖ
 }
 
 /* Page content styles */
+
+.hero {
+    background-color: var(--accent-background);
+}
 
 .hero-title {
     color:#fff;
@@ -66,7 +80,7 @@ body {
     font-size:16px;
     line-height: 1.9;
     border-style:solid;
-    border-color: rgba(255, 255, 255, 1);
+    border-color: var(--accent-color);
     border-radius: 0.3em;
     color:#fff;
     font-weight:bold;
@@ -79,7 +93,7 @@ body {
     background-color:#fff;
     border-radius: 0.3em;
     color: var(--accent-color);
-    border-color: var(--accent-color);
+    border-color: #fff;
 }
 .section-title {
     color: var(--title-text-color);
@@ -142,12 +156,16 @@ body {
     color: var(--primary-text-color)
 }
 
-
 /* Footer styles */
 
+.footer-main {
+    background-color: var(--accent-background);
+}
 .address-link {
     line-height:1.7;
     color:#fff;
+    font-style: normal;
+    text-decoration: none;
 }
 .address-link:hover,
 .address-link:focus {
