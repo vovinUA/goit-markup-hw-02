@@ -62,7 +62,7 @@ body {
 }
 .current:hover,
 .current:focus {
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
 }
 .nav-item-tel {
     color: var(--primary-text-color);
